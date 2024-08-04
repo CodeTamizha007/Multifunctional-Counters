@@ -1,0 +1,86 @@
+
+<br>
+<br>
+<div class="d-flex justify-content-center">
+    <h3> Multifunctional Counters</h3>
+</div>
+
+<div class="d-flex justify-content-center">
+    <h5> Basic Calculator</h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-moon-fill" viewBox="0 0 16 16">
+        <path
+            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+    </svg>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="d-flex mb-3">
+        <input type="text" class="col-auto" placeholder="firstValue" [(ngModel)]="firstValue"aria-label="Username">
+        <span class="input-group-text">{{icon}}</span>
+        <input type="text" *ngIf="bool"class="col-auto" id="1d" placeholder="secondValue" [(ngModel)]="secondValue"aria-label="Server">
+    </div>
+
+</div>
+<div class="d-flex justify-content-center">
+    <h1>{{result}}</h1>
+</div>
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-dark rightSpace" (click)="add()" >+</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="sub()">-</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="multi()">*</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="div()">/</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="mod()">%</button>
+    <button type="button"  class="btn btn-dark rightSpace" (click)="sqr()">^2</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="cube()">^3</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="root()">root</button>
+    <button type="button" class="btn btn-dark rightSpace" (click)="cubeRoot()">cube root</button>
+
+</div>
+
+<br>
+<br>
+
+<div class="d-flex justify-content-center">
+    <h5> Sting Counters</h5>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-moon-fill" viewBox="0 0 16 16">
+        <path
+            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+    </svg>
+</div>
+<div class="d-flex justify-content-center ">
+    <div class="d-flex mb-4">
+        <input type="text" class="col-auto" placeholder="value" [(ngModel)]="StringValue" (ngModelChange)="StringvalueChange()" aria-label="Username">
+</div></div>
+<div class="d-flex justify-content-center  ">
+    <div class="right_Space" >
+        <h5>Total count:</h5>
+        <h5 style="text-align: center;">{{strlen}}</h5>
+    </div>
+    <div>
+        <h5>Alphabets Count:</h5>
+        <h5 style="text-align: center;">{{charcount}}</h5>
+    </div>
+   
+</div>
+<div class="d-flex justify-content-center ">
+    <div class="right_Space">
+        <h5>SpecialCharacters Count:</h5>
+        <h5 style="text-align: center;">{{specchar}}</h5>
+    </div>
+    <div>
+        <h5>Number Count:</h5>
+        <h5 style="text-align: center;">{{numbercount}}</h5>
+    </div>
+   
+</div>
+<div class="d-flex justify-content-center ">
+    <div>
+        <h5>Space Count:</h5>
+        <h5 style="text-align: center;">{{spacecount}}</h5>
+    </div>
+   
+</div>
+
+
+
+
